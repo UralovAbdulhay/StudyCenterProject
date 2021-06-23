@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <children>
+        <TabPane layoutX="7.0" prefHeight="417.0" prefWidth="612.0" rotateGraphic="true"
+                 style="-fx-background-color: transparent;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Home" style="-fx-font-size: 16">
+                    <content>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                            <children>
+                                <HBox spacing="10.0">
+                                    <children>
+                                        <TextField fx:id="homeSearch" maxWidth="300.0" onKeyReleased="#homeFind"
+                                                   HBox.hgrow="ALWAYS"/>
+                                        <Button fx:id="homeClear" mnemonicParsing="false" onAction="#homeClearAction"
+                                                prefHeight="25.0" prefWidth="30.0" style="-fx-background-radius: 10;"
+                                                text="X"/>
+                                    </children>
+                                </HBox>
+                                <TableView fx:id="homeTable" prefHeight="301.0" prefWidth="578.0" VBox.vgrow="ALWAYS"/>
+                            </children>
+                            <padding>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                            </padding>
+                        </VBox>
+                    </content>
+                </Tab>
+                <Tab text="Groups" style="-fx-font-size: 16">
+                    <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                            <children>
+                                <HBox spacing="10.0">
+                                    <children>
+                                        <TextField fx:id="groupSearch" maxWidth="300.0" onKeyReleased="#groupFind"
+                                                   HBox.hgrow="ALWAYS"/>
+                                        <Button fx:id="gruopClear" mnemonicParsing="false" onAction="#groupClearAction"
+                                                prefHeight="25.0" prefWidth="30.0" style="-fx-background-radius: 10;"
+                                                text="X"/>
+                                    </children>
+                                </HBox>
+                                <TableView fx:id="groupTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets/>
+                                    </VBox.margin>
+                                </TableView>
+                            </children>
+                            <padding>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                            </padding>
+                        </VBox>
+                    </content>
+                </Tab>
+                <Tab text="Students" style="-fx-font-size: 16">
+                    <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                            <children>
+                                <HBox spacing="10.0">
+                                    <children>
+                                        <TextField fx:id="studentSearch" maxWidth="300.0" onKeyReleased="#studentFind"
+                                                   HBox.hgrow="ALWAYS"/>
+                                        <Button fx:id="studentClear" mnemonicParsing="false"
+                                                onAction="#studentClearAction" prefHeight="25.0" prefWidth="30.0"
+                                                style="-fx-background-radius: 10;" text="X"/>
+                                    </children>
+                                </HBox>
+                                <TableView fx:id="studentTable" prefHeight="200.0" prefWidth="200.0"
+                                           VBox.vgrow="ALWAYS"/>
+                            </children>
+                            <padding>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                            </padding>
+                        </VBox>
+                    </content>
+                </Tab>
+                <Tab text="Lessons" style="-fx-font-size: 16">
+                    <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                            <children>
+                                <HBox spacing="10.0">
+                                    <children>
+                                        <TextField fx:id="lessonSearch" maxWidth="300.0" onKeyReleased="#lessonFind"
+                                                   HBox.hgrow="ALWAYS"/>
+                                        <Button fx:id="lessonClear" mnemonicParsing="false"
+                                                onAction="#lessonClearAction" prefHeight="25.0" prefWidth="30.0"
+                                                style="-fx-background-radius: 10;" text="X"/>
+                                    </children>
+                                </HBox>
+                                <TableView fx:id="lessonTable" prefHeight="200.0" prefWidth="200.0"
+                                           VBox.vgrow="ALWAYS"/>
+                            </children>
+                            <padding>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                            </padding>
+                        </VBox>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

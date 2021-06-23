@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="499.0" prefWidth="731.0" style="-fx-background-color: transparent;"
+            xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.AddStudentsController">
+    <children>
+        <TableView fx:id="studentTable" layoutX="4.0" layoutY="66.0" prefHeight="427.0" prefWidth="717.0"
+                   AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"
+                   AnchorPane.topAnchor="80.0"/>
+        <Label fx:id="groupNameLab" layoutX="64.0" layoutY="23.0" text="group name" AnchorPane.topAnchor="15.0">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <Label fx:id="leaasonTimeLab" layoutX="242.0" layoutY="23.0" text="Lesson date-time"
+               AnchorPane.topAnchor="15.0">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <Label fx:id="coutOfCame" layoutX="457.0" layoutY="35.0" text="0" AnchorPane.topAnchor="35.0">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+        <Label fx:id="coutOfNoCame" layoutX="616.0" layoutY="35.0" text="0" AnchorPane.topAnchor="35.0">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+        <Button fx:id="okBt" layoutX="640.0" layoutY="458.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0"
+                prefWidth="68.0" text="OK" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="23.0">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="436.0" layoutY="10.0" text="Checked" AnchorPane.topAnchor="10.0">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="580.0" layoutY="10.0" text="Unchecked" AnchorPane.topAnchor="10.0">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

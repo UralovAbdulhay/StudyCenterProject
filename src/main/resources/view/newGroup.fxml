@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0"
+      prefWidth="509.0" xmlns="http://javafx.com/javafx/8.0.211" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.NewGroupController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TextField fx:id="input" prefHeight="38.0" prefWidth="293.0" onKeyReleased="#check">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0">
+            <children>
+                <Button fx:id="canBt" cancelButton="true" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0"
+                        prefWidth="70.0" text="Cancel">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="okBt" defaultButton="true" mnemonicParsing="false" onAction="#submit" prefHeight="40.0"
+                        prefWidth="70.0" text="OK">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>
